@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <header>
+        <div class="topnav">
+            <div class="logo">
+                <p>Deep Image</p>
+            </div>
+                <div class="menu">
+
+                    <ul class="menulist">
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Usage</a></li>
+                        <li><a href="#">Blogs</a></li>
+                    </ul>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <img src="./images/icons8-menu-rounded-48.png">
+                      </a>
+                    <img src="./images/profile.jpg">
+                    <button>Logout</button>
+                </div>
+        </div>
+    </header>
+
+    <section>
+        <div class="above">
+            <div class="outer">
+                <div class="upload_image">
+                    <h4>Upload your Image</h4>
+                    <div class="inner_upload" id="preview">
+                        <img src="./images/icons8-add-image-64.png" >
+                        <input type="file" onChange="dragNdrop(event)" ondragover="drag()" ondrop="drop()"
+                        id="uploadFile" />
+                    </div>
+                </div>
+
+                <div class="url">
+                    <input type="text" id="urlvalue" placeholder="Enter URL to upload image">
+                    <button onclick="change()">Upload</button>
+                </div>
+            </div>
+
+            <div class="sample_images">
+                <p>Sample Images</p>
+                <img class="si" src="./images/sunset-1373171_1920.jpg" onclick="getFirst()">
+                <img class="si" src="./images/nature.jpg" onclick="getSecond()">
+                <img class="si" src="./images/switzerland-7583676_1920.jpg"onclick="getThird()" >
+            </div>
+        </div>
+
+
+       
+        <div class="middle">
+            <h3>See our effect over your images</h3>
+                <div class="images">
+                    <div class="before">
+                        <p>Before</p>
+                        <img src="./images/sunset-1373171_1920.jpg" id="banner">
+                    </div>
+                    <div class="after">
+                        <p>After</p>
+                        <img src="./images/sunset-1373171_1920.jpg" id="banner1">
+                    </div>
+                    <div class="option">
+                        <div class="height">
+                            <p>Upscaling</p>
+                            <div class="height1"><input type="radio"  name="upscale" ><label for="css">1x</label></div>
+                            <div class="height1"><input type="radio"  name="upscale"><label for="css">2x</label></div>
+                        </div>
+                        <button type="submit">Download</button>
+                    </div>
+                </div>
+          </div>
+    </section>
+
+    <footer>
+        <div class="last">
+            <div class="first_last">
+                <h4>Company</h4>
+                <p>Pricing</p>
+                <p>How to Use</p>
+                <p>FAQ</p>
+                <p>Customer Support</p>
+            </div>
+            <div class="second_last">
+                <h4>Use Case</h4>
+                <p>Real State</p>
+                <p>E-Commerce</p>
+                <p>Print</p>
+            </div>
+            <div class="third_last">
+                <h4>Further Information</h4>
+                <p>Privacy Policy</p>
+                <p>Terms & Condition</p>
+            </div>
+            <div class="follow">
+                    <p>Follow Us</p>
+                    <div class="under_follow">
+                        <img src="./images/icons8-facebook-48.png">
+                        <img src="./images/icons8-instagram-48.png">
+                        <img src="./images/icons8-linkedin-circled-48.png">
+                        <img src="./images/icons8-twitter-48.png">
+                    </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>
